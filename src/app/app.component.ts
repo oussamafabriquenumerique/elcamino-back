@@ -9,6 +9,7 @@ import { DataService } from './services/data.service';
 export class AppComponent {
   title = 'elcamino-back';
   screenWidth = window.innerWidth
+
   constructor(public dataService:DataService){
     console.log(this.screenWidth);
     window.addEventListener('resize', ()=>{
